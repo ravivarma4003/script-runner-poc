@@ -1,0 +1,23 @@
+{
+  "name": "jamf-isolate-poc",
+  "version": "1.0.0",
+  "description": "Run user-uploaded scripts in isolated VM for Jamf API interactions",
+  "main": "index.js",
+  "bin": {
+    "jamf-runner": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "example": "node examples/basic-usage.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["jamf", "isolated-vm", "sandbox", "api", "automation"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.11.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
