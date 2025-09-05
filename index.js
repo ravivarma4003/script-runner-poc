@@ -4,9 +4,9 @@ const VMRunner = require('./lib/vm-runner');
 const path = require('path');
 
 /**
- * Main entry point for running Jamf scripts in isolated VM
+ * Main entry point for running user scripts in isolated VM
  */
-class JamfScriptRunner {
+class ScriptRunner {
   constructor() {
     this.vmRunner = new VMRunner();
   }
@@ -131,10 +131,10 @@ Credential format examples:
 }
 
 // Export for programmatic use
-module.exports = JamfScriptRunner;
+module.exports = ScriptRunner;
 
 // CLI interface
 if (require.main === module) {
-  const runner = new JamfScriptRunner();
+  const runner = new ScriptRunner();
   runner.cli();
 }

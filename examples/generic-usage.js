@@ -1,10 +1,10 @@
-const JamfScriptRunner = require('../index');
+const ScriptRunner = require('../index');
 
 /**
  * Example showing generic script execution with dynamic credentials
  */
 async function demonstrateGenericUsage() {
-  const runner = new JamfScriptRunner();
+  const runner = new ScriptRunner();
   
   try {
     console.log("🚀 Demonstrating generic script execution...");

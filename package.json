@@ -1,17 +1,17 @@
 {
-  "name": "jamf-isolate-poc",
+  "name": "script-runner-poc",
   "version": "1.0.0",
-  "description": "Run user-uploaded scripts in isolated VM for Jamf API interactions",
+  "description": "Generic script execution system with dynamic credentials for any API",
   "main": "index.js",
   "bin": {
-    "jamf-runner": "./index.js"
+    "script-runner": "./index.js"
   },
   "scripts": {
     "start": "node index.js",
     "example": "node examples/basic-usage.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["jamf", "isolated-vm", "sandbox", "api", "automation"],
+  "keywords": ["script-runner", "isolated-vm", "sandbox", "api", "automation", "generic"],
   "author": "",
   "license": "ISC",
   "dependencies": {

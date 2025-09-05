@@ -1,10 +1,10 @@
-const JamfScriptRunner = require('../index');
+const ScriptRunner = require('../index');
 
 /**
  * Example showing how to reuse device data for multiple purposes
  */
 async function reuseDeviceData() {
-  const runner = new JamfScriptRunner();
+  const runner = new ScriptRunner();
   
   try {
     // Step 1: Fetch devices once

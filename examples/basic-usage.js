@@ -1,7 +1,7 @@
-const JamfScriptRunner = require('../index');
+const ScriptRunner = require('../index');
 
 async function example() {
-  const runner = new JamfScriptRunner();
+  const runner = new ScriptRunner();
   
   try {
     // Run device fetcher script

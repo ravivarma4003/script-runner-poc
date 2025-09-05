@@ -1,11 +1,11 @@
-# Jamf Isolate POC
+# Script Runner POC
 
-A clean, modular system for running user-uploaded scripts in an isolated VM environment for Jamf API interactions. The uploaded scripts are fully self-contained and handle all API operations including authentication and data fetching.
+A clean, modular system for running user-uploaded scripts in an isolated VM environment for any API interactions. The uploaded scripts are fully self-contained and handle all API operations including authentication and data fetching.
 
 ## 🏗️ Architecture
 
 ```
-jamf-isolate-poc/
+script-runner-poc/
 ├── lib/                    # Core library modules
 │   ├── helpers.js         # Helper functions for user scripts
 │   └── vm-runner.js       # VM execution engine
@@ -48,9 +48,9 @@ node index.js josyscom username password ./scripts/jamf-device-analyzer.js
 
 ### Programmatic Usage
 ```javascript
-const JamfScriptRunner = require('./index');
+const ScriptRunner = require('./index');
 
-const runner = new JamfScriptRunner();
+const runner = new ScriptRunner();
 const result = await runner.run(
   './scripts/jamf-device-fetcher.js',
   'josyscom',
