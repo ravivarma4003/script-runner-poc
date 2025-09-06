@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const VMRunner = require('./lib/vm-runner');
+const VMRunnerIvm = require('./lib/vm-runner-ivm');
 const path = require('path');
 
 /**
@@ -8,7 +8,7 @@ const path = require('path');
  */
 class ScriptRunner {
   constructor() {
-    this.vmRunner = new VMRunner();
+    this.vmRunner = new VMRunnerIvm();
   }
 
   /**
